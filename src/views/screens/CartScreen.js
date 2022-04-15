@@ -22,7 +22,9 @@ const CartScreen = ({navigation}) => {
           <Text style={{fontSize: 13, color: COLORS.grey}}>
             {item.ingredients}
           </Text>
-          <Text style={{fontSize: 17, fontWeight: 'bold'}}>${item.price}</Text>
+          <Text style={{fontSize: 17, fontWeight: 'bold'}}>
+            {item.price} VNĐ
+          </Text>
         </View>
         <View style={{marginRight: 20, alignItems: 'center'}}>
           <Text style={{fontWeight: 'bold', fontSize: 18}}>3</Text>
@@ -55,12 +57,12 @@ const CartScreen = ({navigation}) => {
                 marginVertical: 15,
               }}>
               <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-                Total Price
+                Tổng thanh toán
               </Text>
-              <Text style={{fontSize: 18, fontWeight: 'bold'}}>$50</Text>
+              <Text style={{fontSize: 18, fontWeight: 'bold'}}>VNĐ</Text>
             </View>
             <View style={{marginHorizontal: 30}}>
-              <PrimaryButton title="CHECKOUT" />
+              <PrimaryButton title="THANH TOÁN" />
             </View>
           </View>
         )}

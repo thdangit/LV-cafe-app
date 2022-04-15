@@ -6,21 +6,27 @@ import {PrimaryButton} from '../components/Button';
 
 const OnBoardScreen = ({navigation}) => {
   return (
-    <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
+    <SafeAreaView style={{flex: 1, backgroundColor: COLORS.bgcf}}>
       <View style={{height: 400}}>
         <Image
           style={{
             width: '100%',
             resizeMode: 'contain',
-            top: -150,
+            top: -50,
           }}
-          source={require('../../assets/onboardImage.png')}
+          source={require('../../assets/onboardimg.png')}
         />
       </View>
       <View style={style.textContainer}>
         <View>
-          <Text style={{fontSize: 32, fontWeight: 'bold', textAlign: 'center'}}>
-            Delicious Food
+          <Text
+            style={{
+              fontSize: 32,
+              fontWeight: 'bold',
+              textAlign: 'center',
+              color: '#fff',
+            }}>
+            Chuổi caffe LUX
           </Text>
           <Text
             style={{
@@ -29,7 +35,7 @@ const OnBoardScreen = ({navigation}) => {
               textAlign: 'center',
               color: COLORS.grey,
             }}>
-            We help you to find best and delicious food
+            Chúng tôi giúp bạn tìm ra thức uống ngon nhất và nhanh nhất!!
           </Text>
         </View>
         <View style={style.indicatorContainer}>
@@ -39,7 +45,7 @@ const OnBoardScreen = ({navigation}) => {
         </View>
         <PrimaryButton
           onPress={() => navigation.navigate('Home')}
-          title="Get Started"
+          title="CHỌN MÓN"
         />
       </View>
     </SafeAreaView>

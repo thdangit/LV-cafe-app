@@ -74,7 +74,7 @@ const HomeScreen = ({navigation}) => {
         activeOpacity={0.9}
         onPress={() => navigation.navigate('DetailsScreen', food)}>
         <View style={style.card}>
-          <View style={{alignItems: 'center', top: -40}}>
+          <View style={{alignItems: 'center', top: -10, left: -7}}>
             <Image source={food.image} style={{height: 120, width: 120}} />
           </View>
           <View style={{marginHorizontal: 20}}>
@@ -91,7 +91,7 @@ const HomeScreen = ({navigation}) => {
               justifyContent: 'space-between',
             }}>
             <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-              ${food.price}
+              {food.price} VNĐ
             </Text>
             <View style={style.addToCartBtn}>
               <Icon name="add" size={20} color={COLORS.white} />
@@ -106,17 +106,17 @@ const HomeScreen = ({navigation}) => {
       <View style={style.header}>
         <View>
           <View style={{flexDirection: 'row'}}>
-            <Text style={{fontSize: 28}}>Hello,</Text>
+            <Text style={{fontSize: 28}}>Xin chào,</Text>
             <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 10}}>
-              Ariz
+              Hai Dang
             </Text>
           </View>
           <Text style={{marginTop: 5, fontSize: 22, color: COLORS.grey}}>
-            What do you want today
+            Bạn muốn gì ngày hôm nay ?
           </Text>
         </View>
         <Image
-          source={require('../../assets/person.png')}
+          source={require('../../assets/person.jpg')}
           style={{height: 50, width: 50, borderRadius: 25}}
         />
       </View>
@@ -130,7 +130,7 @@ const HomeScreen = ({navigation}) => {
           <Icon name="search" size={28} />
           <TextInput
             style={{flex: 1, fontSize: 18}}
-            placeholder="Search for food"
+            placeholder="Tìm nhanh..."
           />
         </View>
         <View style={style.sortBtn}>

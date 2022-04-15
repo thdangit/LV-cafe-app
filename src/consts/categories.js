@@ -1,8 +1,16 @@
 const categories = [
-  {id: '1', name: 'pizza', image: require('../assets/catergories/pizza.png')},
-  {id: '2', name: 'Burger', image: require('../assets/catergories/burger.png')},
-  {id: '3', name: 'Sushi', image: require('../assets/catergories/sushi.png')},
-  {id: '4', name: 'Salad', image: require('../assets/catergories/salad.png')},
+  {
+    id: '1',
+    name: 'Bạc xĩu',
+    image: require('../assets/catergories/bacxiu.png'),
+  },
+  {
+    id: '2',
+    name: 'Cafe Đen',
+    image: require('../assets/catergories/cafda.png'),
+  },
+  {id: '3', name: 'Cafe Sữa', image: require('../assets/catergories/cpcn.png')},
+  {id: '4', name: 'Kem', image: require('../assets/catergories/ktm.png')},
 ];
 
 export default categories;
