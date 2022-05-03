@@ -18,6 +18,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import COLORS from '../../consts/colors';
 import categories from '../../consts/categories';
 import foods from '../../consts/foods';
+import {Products} from '../../consts/Products';
 const {width} = Dimensions.get('screen');
 const cardWidth = width / 2 - 20;
 
@@ -101,6 +102,7 @@ const HomeScreen = ({navigation}) => {
       </TouchableHighlight>
     );
   };
+  // console.log(Product);
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
       <View style={style.header}>
@@ -140,12 +142,13 @@ const HomeScreen = ({navigation}) => {
       <View>
         <ListCategories />
       </View>
-      <FlatList
+      {/* <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}
         data={foods}
         renderItem={({item}) => <Card food={item} />}
-      />
+      /> */}
+      <Products />
     </SafeAreaView>
   );
 };
@@ -216,5 +219,4 @@ const style = StyleSheet.create({
     alignItems: 'center',
   },
 });
-
 export default HomeScreen;

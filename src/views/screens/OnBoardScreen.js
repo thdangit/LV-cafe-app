@@ -26,7 +26,7 @@ const OnBoardScreen = ({navigation}) => {
               textAlign: 'center',
               color: '#fff',
             }}>
-            Chuổi caffe LUX
+            Chuỗi cửa hàng Lamon Cafe
           </Text>
           <Text
             style={{
@@ -35,7 +35,7 @@ const OnBoardScreen = ({navigation}) => {
               textAlign: 'center',
               color: COLORS.grey,
             }}>
-            Chúng tôi giúp bạn tìm ra thức uống ngon nhất và nhanh nhất!!
+            Chúc bạn một ngày làm việc tốt lành!
           </Text>
         </View>
         <View style={style.indicatorContainer}>
@@ -45,7 +45,7 @@ const OnBoardScreen = ({navigation}) => {
         </View>
         <PrimaryButton
           onPress={() => navigation.navigate('Home')}
-          title="CHỌN MÓN"
+          title="Bắt Đầu"
         />
       </View>
     </SafeAreaView>
