@@ -40,8 +40,6 @@ const OnBoardScreen = ({navigation}) => {
         </View>
         <View style={style.indicatorContainer}>
           <View style={style.currentIndicator} />
-          <View style={style.indicator} />
-          <View style={style.indicator} />
         </View>
         <PrimaryButton
           onPress={() => navigation.navigate('Home')}

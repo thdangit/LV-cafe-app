@@ -95,7 +95,7 @@ const HomeScreen = ({navigation}) => {
               {food.price} VNĐ
             </Text>
             <View style={style.addToCartBtn}>
-              <Icon name="add" size={20} color={COLORS.white} />
+              <Icon name="add" size={10} color={COLORS.white} />
             </View>
           </View>
         </View>
@@ -110,11 +110,11 @@ const HomeScreen = ({navigation}) => {
           <View style={{flexDirection: 'row'}}>
             <Text style={{fontSize: 28}}>Xin chào,</Text>
             <Text style={{fontSize: 28, fontWeight: 'bold', marginLeft: 10}}>
-              Hai Dang
+              Hoàng Tiến
             </Text>
           </View>
           <Text style={{marginTop: 5, fontSize: 22, color: COLORS.grey}}>
-            Bạn muốn gì ngày hôm nay ?
+            Have a nice day !
           </Text>
         </View>
         <Image
@@ -132,16 +132,16 @@ const HomeScreen = ({navigation}) => {
           <Icon name="search" size={28} />
           <TextInput
             style={{flex: 1, fontSize: 18}}
-            placeholder="Tìm nhanh..."
+            placeholder="Thông tin khách hàng..."
           />
         </View>
         <View style={style.sortBtn}>
-          <Icon name="tune" size={28} color={COLORS.white} />
+          <Icon name="search" size={28} color={COLORS.white} />
         </View>
       </View>
-      <View>
+      {/* <View>
         <ListCategories />
-      </View>
+      </View> */}
       {/* <FlatList
         showsVerticalScrollIndicator={false}
         numColumns={2}
